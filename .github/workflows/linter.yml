@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Haskell Linter
-      uses: domdere/haskell-lint-action@v1.0.2
-      env:
-        token: ${{ secrets.GITHUB_TOKEN }}
+      uses: domdere/haskell-lint-action@v1.0.2 
+      with: 
+        secrets: ${{ secrets.GITHUB_TOKEN }}
