@@ -8,6 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Get code
+      uses: actions/checkout@v1
+    
     - name: Setup Stack
       uses: mstksg/setup-stack@v2
       
