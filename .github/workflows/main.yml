@@ -16,6 +16,5 @@ jobs:
       
     - name: stack install, build and test
       run: |
-        stack install
         stack build
         stack test
