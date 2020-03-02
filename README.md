@@ -1,5 +1,7 @@
 # cat-o-log
 
+![CI](https://github.com/webbiscuit/cat-o-log/workflows/CI/badge.svg)
+
 An application to manage your cats, written in Haskell.
 
 ## Features
