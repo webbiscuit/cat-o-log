@@ -1,0 +1,20 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Get code
+      uses: actions/checkout@v1
+    
+    - name: Setup Stack
+      uses: mstksg/setup-stack@v2
+      
+    - name: stack install, build and test
+      run: |
+        stack build
+        stack test
