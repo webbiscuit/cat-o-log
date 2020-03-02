@@ -11,3 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Haskell Linter
       uses: domdere/haskell-lint-action@v1.0.2
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
