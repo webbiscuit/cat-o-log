@@ -27,9 +27,3 @@ jobs:
         stack build
         stack test
         stack install
-        
-    - name: Archive artifacts
-      uses: actions/upload-artifact@v1
-      with:
-        name: dist
-        path: /home/runner/.local/bin
