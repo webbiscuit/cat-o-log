@@ -32,4 +32,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: dist
-        path: .stack-work/install/**/bin
+        path: /home/runner/.local/bin
