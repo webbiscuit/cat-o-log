@@ -2,9 +2,9 @@ name:                cat-manager
 version:             0.1.0.0
 github:              "githubuser/cat-manager"
 license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2020 Author name here"
+author:              "WebBiscuit"
+maintainer:          "daniel@webbiscuit.co.uk"
+copyright:           "2020 WebBiscuit"
 
 extra-source-files:
 - README.md
@@ -26,15 +26,19 @@ library:
   source-dirs: src
 
 executables:
-  cat-manager-exe:
+  catmanager:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -Wall
+    - -Wcompat
     dependencies:
     - cat-manager
+    - optparse-applicative
+
 
 tests:
   cat-manager-test:
@@ -44,5 +48,7 @@ tests:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    - -Wall
+    - -Wcompat
     dependencies:
     - cat-manager
