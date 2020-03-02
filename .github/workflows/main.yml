@@ -26,6 +26,7 @@ jobs:
       run: |
         stack build
         stack test
+        stack install
         
     - name: Archive artifacts
       uses: actions/upload-artifact@v1
