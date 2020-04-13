@@ -6,7 +6,7 @@ import System.IO (
   hSetBuffering,
   stdout)
   
-data Cat = Cat CatName deriving (Show)
+data Cat = Cat String deriving (Show)
 
 data Command
   = Add
