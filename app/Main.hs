@@ -5,6 +5,8 @@ import System.IO (
   BufferMode(NoBuffering),
   hSetBuffering,
   stdout)
+  
+data Cat = Cat CatName deriving (Show)
 
 data Command
   = Add
